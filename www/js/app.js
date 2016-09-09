@@ -38,7 +38,7 @@ $scope.loadOlderStories = function(){
 
 $scope.loadNewerStories = function(){
   var params = {'before':$scope.stories[0].name};
-     $http.get("https://www.reddit.com/r/funny/new/.json",{params:params})
+     $http.get("https://www.reddit.com/r/Android/new/.json",{params:params})
       .success(function(response){
         var newStories = [];
         angular.forEach(response.data.children,function(child){
